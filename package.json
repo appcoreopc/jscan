@@ -1,0 +1,36 @@
+{
+  "name": "jscan",
+  "version": "1.0.0",
+  "description": "A javascript vulnerability scanner",
+  "main": "./bin/jscan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appcoreopc/jscan.git"
+  },
+  "keywords": [
+    "scanner"
+  ],
+  "bin": {
+    "jscan": "./bin/jscan.js"
+  },
+  "dependencies": {
+    "underscore"     : "1.7.x - 1.8.x",
+    "commander"      : "2.5.x",
+    "read-installed" : "3.1.x",
+    "walkdir"        : "0.0.7",
+    "request"        : "~2.x.x"
+  },
+  "devDependencies": {
+    "nodeunit": "",
+    "jshint": ""
+  },
+  "author": "jeremy woo <kepung@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appcoreopc/jscan/issues"
+  },
+  "homepage": "https://github.com/appcoreopc/jscan#readme"
+}
