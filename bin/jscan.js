@@ -93,7 +93,7 @@ events.on('load-node-repo', function() {
     ? (config.noderepo.match(/^https?:\/\//)
       ? repo.loadrepository(config.noderepo, config)
       : repo.loadrepositoryFromFile(config.noderepo, config))
-    : repo.loadrepository('https://raw.githubusercontent.com/RetireJS/retire.js/master/repository/npmrepository.json', config)
+    : repo.loadrepository('https://raw.githubusercontent.com/appcoreopc/jscan/master/npmrepository.json', config)
   ).on('done', function(repo) {
       nodeRepo = repo;
       events.emit('node-repo-loaded');
