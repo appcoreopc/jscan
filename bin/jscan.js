@@ -80,7 +80,7 @@ events.on('load-js-repo', function() {
     ? (config.jsrepo.match(/^https?:\/\//)
       ? repo.loadrepository(config.jsrepo, config)
       : repo.loadrepositoryFromFile(config.jsrepo, config))
-    : repo.loadrepository('https://github.com/appcoreopc/jscan/blob/master/jsvulnerabilityrepository.json', config)
+    : repo.loadrepository('https://raw.githubusercontent.com/appcoreopc/jscan/master/jsvulnerabilityrepository.json', config)
   ).on('done', function(repo) {
       jsRepo = repo;
       events.emit('js-repo-loaded');
